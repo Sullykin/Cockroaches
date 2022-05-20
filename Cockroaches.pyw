@@ -169,7 +169,7 @@ SCREEN_HEIGHT = monitor.height
 pygame.init()
 os.environ['SDL_VIDEO_WINDOW_POS'] = "%d,%d" % (0, 0)  # set starting position
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT), pygame.NOFRAME)
-pygame.display.set_caption('Cockroaches')
+pygame.display.set_caption('Cockroaches؜')
 clock = pygame.time.Clock()
 
 SetWindowPos = windll.user32.SetWindowPos
@@ -179,7 +179,7 @@ SetWindowPos(
 
 # Set window transparency color
 fuchsia = (255, 0, 128)
-hwnd = win32gui.FindWindow(None, "Cockroaches")
+hwnd = win32gui.FindWindow(None, "Cockroaches؜")
 lExStyle = win32gui.GetWindowLong(hwnd, win32con.GWL_EXSTYLE)
 lExStyle |= win32con.WS_EX_TRANSPARENT | win32con.WS_EX_LAYERED
 win32gui.SetWindowLong(hwnd, win32con.GWL_EXSTYLE, lExStyle)
@@ -187,7 +187,7 @@ win32gui.SetLayeredWindowAttributes(hwnd,
                                     win32api.RGB(*fuchsia), 0,
                                     win32con.LWA_COLORKEY)
 
-invalid_windows = ['Setup', '*IDLE Shell 3.10.0*', 'Cockroaches', 'Microsoft Text Input Application', 'Paint 3D', 'NVIDIA GeForce Overlay', 'Untitled ‎- Paint 3D', 'Program Manager', 'Settings']
+invalid_windows = ['Setup', '*IDLE Shell 3.10.0*', 'Cockroaches؜', 'Microsoft Text Input Application', 'Paint 3D', 'NVIDIA GeForce Overlay', 'Untitled ‎- Paint 3D', 'Program Manager', 'Settings']
 valid_windows = get_visible_windows()
 #print(valid_windows)
 squish_sounds = ['squish1.mp3', 'squish2.mp3']
